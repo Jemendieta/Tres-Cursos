@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jorge Mendieta" />
+    <meta name="description" content="web con HTML" />
+    <meta name="keywords" content="desarrollo web, frontend, html" />
+    <!-- <meta http-equiv="refresh" content="5;"> -->
+    <link rel="shorcut icon" href="assets/img/icon.ico" />
+    <link rel="stylesheet" href="css/contacto.css" />
+    <title>Tres Cursos | HTML - CSS - JS</title>
+  </head>
+  <body>
+    <!-- DESARROLLO DE TRES CURSOS DESDE CERO | FRONTEND -->
+    <header>
+      <!-- web para usar imágenes aleatorias de prueba https://picsum.photos/200/300 -->
+      <h1>Primera web con HTML</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="preferencias.html">Preferencias</a></li>
+          <li><a href="audiovisuales.html">Audiovisuales</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="contenedor-formulario">
+      <form action="">
+        <label for="nombre">Nombre: </label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Escribe tu nombre"
+          required
+        />
+        <label for="apellido">Apellido: </label>
+        <input
+          type="text"
+          id="apellido"
+          name="apellido"
+          placeholder="Escribe tu apellido"
+          required
+        />
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Escribe tu email"
+          required
+        />
+
+        <label for="Pais">País: </label>
+        <select name="pais" id="pais">
+          <option value="Perú">Perú</option>
+          <option value="Paraguay">Paraguay</option>
+          <option value="Ecuador">Ecuador</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Brazil">Brazil</option>
+          <option value="Chile">Chile</option>
+          <option value="Bolivia">Bolivia</option>
+        </select>
+        <label for="comentario">Comentario: </label>
+
+        <textarea
+          name="comentario"
+          id="comentario"
+          placeholder="Escribe tu comentario"
+        ></textarea>
+
+        <label for="motivo">Motivo de contacto: </label>
+        <input type="radio" id="motivo" name="motivo" /><i>Soy Peruano</i>
+        <input type="radio" id="motivo" name="motivo" /><i>Soy Chileno</i>
+        <input type="radio" id="motivo" name="motivo" /><i>Soy Argentino</i>
+        <input type="radio" id="motivo" name="motivo" /><i>Soy Brasileño</i>
+        <input type="radio" id="motivo" name="motivo" /><i>Soy Ecuatoriano</i>
+        <input type="radio" id="motivo" name="motivo" /><i>Soy Paraguayo</i>
+        <input type="radio" id="motivo" name="motivo" /><i>Soy Boliviano</i>
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+
+    <footer class="footer">
+      <p>Derechos reservados &copy; 2024</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
