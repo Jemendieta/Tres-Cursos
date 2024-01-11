@@ -2,7 +2,7 @@
 
 ---
 
-![Curso FrontEnd Base - HTML CSS JS](../TRES%20CURSOS/HTML/assets/img/portada.jpg)
+![Curso FrontEnd Base - HTML CSS JS](portada.jpg)
 
 ---
 
