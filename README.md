@@ -2,7 +2,7 @@
 
 ---
 
-![Curso FrontEnd Base - HTML CSS JS](assets/img/portada.jpg)
+![Curso FrontEnd Base - HTML CSS JS](../TRES%20CURSOS/HTML/assets/img/portada.jpg)
 
 ---
 
@@ -27,5 +27,4 @@
    - SVG
    - Realizamos el proyecto final con la estructura bas de html para 4 secciones nav y hacemos uso de algunos estilos en css para cada una de ellas.
 
-2. Curso de CSS - Sergie Code.
-   -
+2. ## Curso de CSS - Sergie Code.
