@@ -6,6 +6,14 @@
 
 ---
 
+1. [HTML](#html)
+2. [CSS](#css)
+3. [JavaScript](#js)
+
+---
+
+<div id="html"/>
+
 1. Iniciaciamos con el curso de HTML - Sergie Code.
 
    - Analizamos los elementos meta en html.
@@ -26,5 +34,7 @@
      - Estructura de etiqueta select
    - SVG
    - Realizamos el proyecto final con la estructura bas de html para 4 secciones nav y hacemos uso de algunos estilos en css para cada una de ellas.
+
+   <div id="css"/>
 
 2. ## Curso de CSS - Sergie Code.
