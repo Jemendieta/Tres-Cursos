@@ -116,4 +116,68 @@
 
     ### Fuentes
 
+    - Sans Serif - planas
+    - Serif - Tienen un diseño más estilizado
+    - Dentro de CSS hacemos uso de las tipografías haciendo uso del atributo font-family
+
+    ### Iconos
+
+    - Existen muchos sitios web desde los cuales tomar iconos para nuestros proyectos, uno de los más recomendados es el repositorio de google. [Iconos de google](https://fonts.google.com/icons "Iconos de Google").
+    - Existen otras alternativas para iconos como los de bootsrap o font awesome.
+
+    ### Listas
+
+    - En css podemos personalizar nuestras listas ordenadas o desordenadas con iconos e imágenes.
+    - podemos hacer uso del atributo list-style para personalizar los items de nuestras listas
+    - como por ejemplo el atributo list-style-image : url(ruta de la imagen para nuestras listas);
+
+    ### Tablas
+
+    - con los diferentes atributos de borde podeos personalizar el diseño de nuestras tablas.
+
+    ### Display & Visibility
+
+    - Se usa para mostrar nuestros elementos de formas diversas ya sea en bloque o en línea o no mostrarlos si es lo que necesitamos.
+    - Podemos hacer uso del atributo display el cual contiene muchos valores que podemos usar.
+      - block
+      - inline
+      - grid
+      - flex
+        entre otros.
+    - el atributo visivility nos permite ocultar un elemento de nuestra web.
+      - Visibility: hidden;
+      - algo a considerar es que el elemento puede conservar su espacio ocupado a pesar de que ya no se muestre en la web.
+
+    ### Position
+
+    - Dos conceptos claves en position, el flujo y el espacio en el flujo de los elementos HTML.
+
+      - Flujo: Es el orden en el que aparecen los elementos en nuestra web o en nuestro html.
+      - Espacio en el flujo: ese espacio se puede reservar en algunas ocasiones.
+      - Es el lugar en el que podemos ubicar a nuestros elementos y desde donde se mueve.
+      - Tiene distintos valores:
+
+        - <b>Static</b> = basicamente es que el elemento mantiene su posició según el flujo. Por defecto, es la posición de todos los elementos dentro del HTML.
+
+        - <b>Relative</b> = Las coordenadas (top, right, bottom, left) de relative están en relación a su posición inicial, si se mueve, su espacio se conserva.
+
+        - <b>Ansolute</b> = rompe la maquetación y se sale del flujo, su espacio no se reserva, se reduce a cero, sus coordenadas se calculan respecto al ancestro más cercano que esté posicionado y si no se calcula respecto al vieeport.
+
+        - <b>Fixed</b> = Pierde su espacio en el flujo, sus dimensiones se ajustan al contenido, sus coordenadas siempre son relativas al viewport, nunca hace scroll, se queda en el lugar indicado y se sobrepone a otros elementos.
+
+        - <b>Sticky</b> = fija un elemento según el scroll, elemento pegajoso.
+
+      - Un elemento se considera posicionado siempre y cuando tenga alguna de las propiedades anteriores menos static.
+      - Algo que debemos considerar es que para posicionar nuestros elementos haremos uso de las propiedades top, right, bottom y left.
+      - Algo a considerar es que top y bottom fincionan siempre y cuando el elemento contenedor tiene altura definida.
+      - El ancho de un elemento posicionado está definido por su contenido.
+
+    ### Z-index
+
+    - El elemento que tenga mayor valor aparece primero, define la posición de un elemento en el eje z, sobre todo se usa cuando hay elementos super puestos.
+    - Si tenemos varios elementos a los cuales aplicaremos z-index, se recomienda colocar valores grandes para poder manipularlos más facilmente.
+    - Cuando trabajamos con pseudo-elementos, el z-index solo tiene dos valores posibles, 1 y -1 y que además el elemento padre no tenga un z-index declarado.
+
+    ### Overflow
+
     -
