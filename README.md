@@ -2,7 +2,7 @@
 
 ---
 
-![Curso FrontEnd Base - HTML CSS JS](portada.jpg)
+![Curso FrontEnd Base - HTML CSS JS](assets/img/portada.jpg)
 
 ---
 
@@ -179,5 +179,53 @@
     - Cuando trabajamos con pseudo-elementos, el z-index solo tiene dos valores posibles, 1 y -1 y que además el elemento padre no tenga un z-index declarado.
 
     ### Overflow
+
+    - permite ocultar o asignar un scroll al contenido que no sabe en su contenedor padre.
+
+    ### Float
+
+    - es una característica que le podemos asignar a un elemento para que ocupe una posición flotante alrededor de otro elemento.
+    - ubica un elemento al lado izquierdo o derecho de su contenedor, permitiendo a los elementos de texto y en línea aparecer a su costado.
+
+    ### Selectores Combinados.
+
+    - Cuando usamos mas de un selector para tener mayor especificidad. Esto sucede cuando por ejemplo usamos selectores descendientes.
+      - por ejemplo <b>p img{}</b>
+      - <b> > </b> Los elementos hijos se seleccionan con el símbolo >
+      - <b>+</b> Los elementos adyacentes con el símbolo +, por ejemplo los elementos en linea.
+      - <b>~</b> Los hermanos generales, incluso si no son directamente adyacentes, estos se seleccionan con el símbolo ~
+      - <b> \* </b> Para seleccionar todos los elementos hacemos uso del \* , conocido también como selector universal.
+
+    ### PseudoClases
+
+    - Actuan sobre los elementos html asignándoles propiedades especiales como lo hace Hover, la cual actúa al pasar el puntero del mouse sobre el elemento.
+
+    ```CSS
+     p:hover{
+      background-color:red;
+      <!-- Cuando se pase el puntero por encima del elemento este se pondrá de color rojo -->
+     }
+     a:visited{
+      color:cyan;
+      <!-- luego de que el enlace sea visitado se colocará de color cyan -->
+     }
+     p:first-child{
+      color:blue;
+      <!-- El primer hijo tendrá color azul -->
+     }
+     p:nth-child(2){
+      color:red;
+      <!-- El segundo hijo tendrá color rojo -->
+     }
+     p:nth-child(odd){
+      color:yellow;
+      <!-- Todos los elementos impares tendrán color amarillo -->
+     }
+
+    ```
+
+    - Existen muchas PseudoClases de las cuales podemos hacer uso [Click Aquí](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes "PseudoClases CSS")
+
+    ### PseudoElementos
 
     -
