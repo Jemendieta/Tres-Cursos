@@ -228,4 +228,50 @@
 
     ### PseudoElementos
 
+    - Son elementos que se añaden a elementos ya existentes y que además permiten añadir estilos a una parte en concreto, son varios los que podemos utilizar como por ejemplo los siguientes:
+      - ::firts-line : actúa sobre la primera letra de una palabra.
+      - ::before: crea un elemento antes.
+      - ::after: crea un elemento despues.
+      - ::marker: para los marcadores o viñetas.
+      - ::selection
+
+    ### Opacidad
+
+    - Nos permite definir un nivel de transparencia de un elemento, en que grado se superpone el fondo de nuestro sitio.
+    - su valor está entre 0 y 1
+
+      ```CSS
+      p{
+        opacity:0.7;
+      }
+      ```
+
+    ### Selectores de Atributos
+
+    - Seleciona los elementos cuyos atributos coinciden con un atributo determinado. En los siguientes ejemplos, seleccionamos a los elementos que contengan el atributo title y href conteniendo a .org
+
+    ```CSS
+      a[title] {
+        color: purple;
+      }
+
+      a[href$=".org"] {
+        font-style: italic;
+      }
+
+    ```
+
+    ### !important
+
+    - Permite superponer estilos a un elemento por encima de que los que ya tenía pre definidos.
+    - Se recomienda solo en casos muy particulares, pues su uso reiterado no es una buena práctica.
+
+    ```CSS
+    p {
+       color: red !important;
+      }
+    ```
+
+    ### Animaciones
+
     -
