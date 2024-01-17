@@ -312,4 +312,11 @@
 
     ### Media Queries
 
-    -
+    - Los media queries son un conjunto de estilos con los cuales podemos hacer que nuestro sitio se adapte a la pantalla de diversos dispositivos como laptps, celulares y tablets.
+    - La estructura de la declaración css, dependerá de la pantalla a la queramos adaptar ek sitio.
+
+    ```CSS
+       @media (max-width: 1250px) {
+          /* … */
+        }
+    ```
