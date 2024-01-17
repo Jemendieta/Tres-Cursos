@@ -319,4 +319,15 @@
        @media (max-width: 1250px) {
           /* … */
         }
+
     ```
+
+    ### FlexBox
+
+    - Es un modelo de layout que nos permite definir la forma en la que los elementos se muestran en la pantalla o en el flujo de nuestro sitio.
+    - Estudiando cada una de sus propiedades y valores podremos sacarle su máximo provecho. [Click Aquí](https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Flexbox "FlexBox")
+
+    ### Grid
+
+    - Es un modelo de Layout que nos permite hacer que nuestros sitios sean mas adaptables a las necesidades del usuario dividiendo la página en una cuadrilla en la cual podremos distribuir nuestros elementos.
+    - En compañía de FlexBox, nos resulta en un herramienta sumamente potente. [Click Aquí](https://developer.mozilla.org/es/docs/Web/CSS/CSS_grid_layout "CSS Grid")
