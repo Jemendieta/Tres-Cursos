@@ -274,4 +274,42 @@
 
     ### Animaciones
 
+    - Nos permiten dar mayor dinamisno a nuestros sitios web.
+    - Haremos uso de la propiedad animation Y de las keyframes como en el siguiente ejemplo:
+
+    ```CSS
+       p {
+        animation-duration: 3s;
+        animation-name: slidein;
+      }
+
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%;
+        }
+
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+    ```
+
+    - Las posibilidades para hacer uso de este recurso son infinitas y dependerán de nuestra creatividad y necesidades del sitio.
+    - Animation tiene una forma abreviada en donde podemos agrupar varios valores.
+
+    ### Transiciones
+
+    - Nos ofrecen otra forma de crear animaciones en css.
+
+    ```CSS
+      div {
+          transition-property: opacity, left, top, height;
+          transition-duration: 3s, 5s, 3s, 5s;
+        }
+    ```
+
+    ### Media Queries
+
     -
