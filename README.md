@@ -335,3 +335,128 @@
 <div id="js"/>
 
 3. ## Curso de JavaScript
+
+   ### Comenzamos
+
+   - Fundamentos de Js - Declaraciones.
+
+     - **Las variables** son contenedores que almacenan valores.
+     - Tenemos tres formas de declarar variables:
+
+       - **var**: nombreDeLaVariable = valor
+       - En JS existe algo que se conoce como camel case, es decir, el uso de minúsculas y mayúsculas con en nombreDeVariable.
+       - No se recomienda el usp de var debido al scope.
+       - **let** nombreVariable = valor
+       - let es la forma recomendada de declarar variables.
+       - **const** nombreVariable = "valor"
+       - En el caso de const, es obligatorio declarar un valor a nuestra varaibles.
+       - cons no permite reasignar la declaración de una variebla a diferencia de var y let que si lo hacen.
+
+       ```JS
+          var = "miVariable1";
+          let = "miVariable2";
+          const = "miVariable3";
+
+          <!-- Declaración de varias varaibles a la vez -->
+          let x,y,z;
+          <!-- Luego le asignamos los valores -->
+          x = 1;
+          y = 2;
+          z = x + y;
+       ```
+
+       - EL punto y coma permite separar ejecuciones de líneas de cógigo.
+
+   - Datos number y string:
+
+     - Números:
+
+     ```JS
+      let variableNumero = 37;
+      let decimal = 1.2;
+     ```
+
+     - Texto, cadena o string:
+
+     ```JS
+      let variableTexto = "Jorge";
+
+     ```
+
+   ### Operadores
+
+   - Tenemos el opreador de aisgnación que es el signo igual **=**.
+   - También tenemos los operadores aritméticos representados por los símbolos de las cuatro operacioens básicas **(+, -, \*, /)**
+   - Tenemos el símbolo de **%** que nos dá el resto de uan diisión.
+   - Si queremos colocar un exponente, podemos hacerlo con el opereador **\*\***.
+
+   ```JS
+    const suma = 1 + 3; <!-- suma o concatenación -->
+    const resta = 3 - 1; <!-- resta -->
+    const multiplicacion = 4 * 3; <!-- multiplicación -->
+    const division = 2 * 2; <!-- división -->
+    const resto = 5 % 2; <!-- resto -->
+    const exponente = 3 ** 3; <!-- exponente -->
+   ```
+
+   - Si quisieramos ver el resultado de alguna de las operaciones que se muestran arriba usaríamos la consola.
+
+   ```JS
+    console.log(suma);
+    console.log(resta);
+    console.log(multiplicacion);
+    console.log(division);
+   ```
+
+   ### Sintaxis de las variables
+
+   - La manera de declarar variables tiene ciertas reglas, una de ellas es el uso de camelcase, es decir el uso de minúsculas y mayúsculas.
+   - se puede iniciar el signo de dolar o guion bajo.
+
+   ```JS
+    const $variable = 1;
+    const Variable2 = 2;
+    const miVariable = 3;
+    const _varaible4 = 4;
+    const varaible_cinco = 6;
+   ```
+
+   - algo a considerar es que JS es case sensitive, es decir que una una dos variables pueden llamarse igual pero se diferencian por como han sido declaradas, por ejemplo:
+
+   ```JS
+    const nombre = "Jorge";
+    const Nombre = "Jorge";
+    <!-- ambas varaibles parecen iguales, pero la letra minúscula o mayúscula las hace distintas -->
+   ```
+
+   ### Scope (alcance de una variable)
+
+   - Es el contexto de ejecución de una varaible dependiendo de donde ha sido declarada.
+
+   ```js
+   <!-- Variable con scope externo -->
+    let x = 2;
+    {
+      <!-- variable con scope interno -->
+      let x = 3;
+      concole.log(x);
+      <!-- mostrará 3 -->
+    }
+    console.log(x);
+    <!-- mostrará 2 -->
+   ```
+
+   - En el ejemplo anterior hemos declarado dos variables las cuales tienen un scope(ambito o alcance) distinto, una existe de forma global, y otro existe dentro de las llaves.
+   - el scope va desde afuera hacia adentro.
+
+   ```JS
+    let x = 2,
+    {
+      let y = 3;
+      x += y;
+      console.log(x)
+      <!-- mostrará 5, pues la variable x tiene scope externo -->
+    }
+   ```
+
+   ### Tipos de Datos
