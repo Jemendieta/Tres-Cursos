@@ -460,3 +460,75 @@
    ```
 
    ### Tipos de Datos
+
+   - Números, floats, strings, boolean.
+   - Antes ya vimos números y strings, ahora veremos que es un **booleano**.
+   - solo nos pueden devolver valores verdaderos (true) o falsos (false).
+   - Tenemos también los **undefined** (indfinidos), los cuales se presentan cuando aún no se ha asignado un valor aunque ya se ha declarado una variable.
+   - **Null** el cual es la ausencia de valor.
+   - **Objeto** son pares de clave valor, usado para guardar una colección de datos definidos y entidades más complejas.
+   - **Array** el cual es un arreglo, un conjunto o lista de valores.
+   - **date** para el manejo de fechas.
+
+   ```JS
+   <!-- Booleanos -->
+    let de = true;
+    let b = false;
+    <!-- Indefinidos -->
+    let variable;
+    <!-- Nulos -->
+    let variable = null;
+    <!-- Objeto -->
+    let objeto {
+      clave: valor
+    }
+    <!-- Arrays -->
+    lst frutas = ["manzana", "pera", "fresa"];
+    console.log(frutas);
+    <!-- Fechas -->
+    let fecha = new Date("01-31-2024");
+    console.log(fecha);
+   ```
+
+   ### Operadores Lógicos
+
+   - Nos permiten lleavr a cabo ciertas acciones como comparación de valores o tipos de datos.
+   - doble(==) y triple (===) igual.
+   - Negación !, nos permite negar o comprbar si un valor es distinto a otro.
+   - comparación con < > <= >=
+   - Operador && (y) el cual nos permite comparar mas de un valor.
+   - Operador || (ó)
+   - **Ejemplos**...👇👇👇
+
+   ```JS
+    <!-- Doble y triple igual -->
+    let x = 2;
+    let y = 4;
+    <!-- doble igual compara si el valor absoluto es igual -->
+    let z = x == y;
+    <!-- triple igual compara si el valor y tipo de dato son iguales -->
+    let z = x === y;
+
+    <!--Negación-->
+    let num1 = 2;
+    let num2 = 2;
+    let result = num1 != num2;
+    console.log(result);
+
+    <!-- Mayor o Menor -->
+    let a = 2;
+    let b = 2;
+    let resul = a > b;
+    console.log(resul);
+    <!-- operador && -->
+    let a = 2;
+    let b = 1;
+    let c = 3
+    let resul = a > b && c < a;
+    console.log(resul);
+    <!-- operador || -->
+    let a = 2;
+    let b = 2;
+    let resul = a > b || a > c;
+    console.log(resul);
+   ```
