@@ -532,3 +532,39 @@
     let resul = a > b || a > c;
     console.log(resul);
    ```
+
+   ### Consola
+
+   - Nos permite contar con una herramienta medinte la cual podemos llevar a cabo muchas operaciones como la ejecución de JS haciendo uso de Node Js entre muchas otras cosas.
+
+   ### Funciones
+
+   - Son un conjunto de instrucciones de calculan y devuelven un valor o que llevan a cabo un tarea específica.
+   - Se declaran de la siguiente manera...👇
+
+   ```JS
+    function nombreFuncion(parametro1, parametro2, ...){
+      <!-- instrucciones -->
+    }
+    <!-- ejemplo práctico con función clásica-->
+    function suma(a,b){
+      return a + b;
+    }
+    suma(2,4);
+    let respuesta = suma(2,4);
+    console.log(respuesta);
+    <!-- con lo anterior devolvemos mediante una función la suma de dos números. -->
+   ```
+
+   - Existen otras formas de declarar una función.
+
+   ```JS
+    <!-- Funciones tipo flecha -->
+      let sumaDos = numero => numero + 1;
+      console.log(sumaDos(3));
+      <!-- esto nos devolvería 4 -->
+   ```
+
+### Objetos
+
+-
