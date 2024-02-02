@@ -564,7 +564,7 @@
       console.log(sumaDos(3));
      // esto nos devolvería 4
 
-      //Funciones por expresión
+      //Funciones por expresión, consiste en guardar un función en una variable
       const square = function (number) {
        return number * number;
       };
@@ -575,4 +575,109 @@
 ### Objetos
 
 - Son estructuras de datos, formados por pares de clave valor, que pueden tener propiedades y métodos.
-- son representaciones de algo real en código.
+- son representaciones de algo real en código.👇👇
+
+```JS
+  let auto = {
+    marca: "Fiat",
+    modelo: "uno",
+    peso: 1000,
+    color: "rojo"
+  }
+  console.log(auto);
+  // para mostrar un valor específico haríamos lo siguiente
+  console.log('El color del auto es: ', auto.color);
+  console.log(auto["peso"]);
+
+  // ejemplo de objeto con un array
+  let vendedor = {
+    nombre:"Jorge",
+    empresa:"Hola",
+    habilidades:['carisma','puntualidad'],
+  }
+  console.log(vendedor.habilidades);
+```
+
+### Eventos
+
+- acciones que suceden denro de la página web, los cules se desencadenan por acción del usuario o por las características de la propia web.
+
+```HTML
+<!-- EJemplo del uso de eventosen el que mostramos la fecha abtul haciendo click en el boton -->
+  <h1>Eventos</h1>
+  <p id="seleccionable"></p>
+  <button onclick="mostrar()">Click Here</button>
+  <script>
+    function mostrar(){
+      document.getElementById('seleccionable').innerHTML = Date()
+    }
+  </script>
+  <!-- mismo ejemplo pero que se ejecuta al pasar el mouse por encima del boton, esto por el evento onmouseover -->
+  <h1>Eventos</h1>
+  <p id="seleccionable"></p>
+  <button onmouseover="mostrar()">Click Here</button>
+  <script>
+    function mostrar(){
+      document.getElementById('seleccionable').innerHTML = Date()
+    }
+  </script>
+```
+
+- Existen muchos tipos de eventos que desencadenan distintas acciones en JS. [Lista de Eventos](https://fonts.google.com/icons "Eventos JS").
+
+### Strings
+
+- Existen ciertas situaciones en la que el uso de las comillas puede resultar algo complejo, es por eso que tenemos la siguiente solución.
+
+```JS
+// colocamos una barra invertida para agregar un apóstrofe que en situaciones normales sería tomada como comilla.
+  let texto1 = 'Let\'s Do it';
+  //en este segundo ejemplo usamos dos barras para usar las comillas como cita
+  let text2 = 'Alber Einstein dijo que\'La relatividad es cool\''
+  console.log(texto1);
+  console.log(texto2);
+
+  //Salto de línea
+  let texto3 = 'esto está arriba \n y esto está abajo'
+  console.log(texto3)
+
+  // existen muchas otras características que pueden ser usadas en distintos contextos.
+  // Con el siguiente ejemplo obtenemos la cantidad de caracteres de valor que contiene la variable text4
+  let texto4 = "murciélago";
+  console.log(texto4.lenght);
+```
+
+- Tenemos también métodos con el uso de strings
+
+```JS
+  let texto = "Educación";
+  // Haciendo uso de slice obtenemos los caracteres despues del cuarto hasta el séptimo
+  let corte = texto.slice(4,7)
+  console.log(corte)
+
+  let textoMas = "La educación es importante en Perú";
+  // con replace, reemplazamos un texto por otro
+  let result = textoMas.replace('Perú', 'En el mundo');
+  console.log(result);
+
+  // cambiar a mayúsculas
+  let minusculas = "hola soy jorge";
+  let mayusculas = minusculas.toUpperCase();
+  console.log(mayusculas);
+
+  // quitar espacios en blanco y concatenar otra variable
+  //trimp() quita los espacios en blanco
+  let espacios = "      texto con espacios";
+  let pais = "  Perú";
+  let textoSinEspacios = espacios.trimp().concat(pais);
+  console.log(textoSinEspacios)
+
+  // Método split. El cual divide un objeto en un array
+  //
+  let text = "hola. como estas. espero que bien"
+  // con el uso del punto le indicamos donde tiene que separar
+  let rel = text.split('.')
+  console.log(rel)
+```
+
+###

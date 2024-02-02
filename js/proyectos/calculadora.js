@@ -1,1 +1,1 @@
-// Primer proyecto JS del curso - Calculadora Básica
+// Primer proyecto del curso de JS - Calculadora.
