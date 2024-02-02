@@ -357,9 +357,9 @@
           let = "miVariable2";
           const = "miVariable3";
 
-          <!-- Declaración de varias varaibles a la vez -->
+          // Declaración de varias varaibles a la vez
           let x,y,z;
-          <!-- Luego le asignamos los valores -->
+          // Luego le asignamos los valores
           x = 1;
           y = 2;
           z = x + y;
@@ -391,12 +391,12 @@
    - Si queremos colocar un exponente, podemos hacerlo con el opereador **\*\***.
 
    ```JS
-    const suma = 1 + 3; <!-- suma o concatenación -->
-    const resta = 3 - 1; <!-- resta -->
-    const multiplicacion = 4 * 3; <!-- multiplicación -->
-    const division = 2 * 2; <!-- división -->
-    const resto = 5 % 2; <!-- resto -->
-    const exponente = 3 ** 3; <!-- exponente -->
+    const suma = 1 + 3; // suma o concatenación
+    const resta = 3 - 1; // resta
+    const multiplicacion = 4 * 3; // multiplicación
+    const division = 2 * 2; // división
+    const resto = 5 % 2; // resto
+    const exponente = 3 ** 3; // exponente
    ```
 
    - Si quisieramos ver el resultado de alguna de las operaciones que se muestran arriba usaríamos la consola.
@@ -434,16 +434,16 @@
    - Es el contexto de ejecución de una varaible dependiendo de donde ha sido declarada.
 
    ```js
-   <!-- Variable con scope externo -->
-    let x = 2;
-    {
-      <!-- variable con scope interno -->
-      let x = 3;
-      concole.log(x);
-      <!-- mostrará 3 -->
-    }
-    console.log(x);
-    <!-- mostrará 2 -->
+   // Variable con scope externo
+   let x = 2;
+   {
+     // variable con scope interno
+     let x = 3;
+     concole.log(x);
+     //mostrará 3
+   }
+   console.log(x);
+   //mostrará 2
    ```
 
    - En el ejemplo anterior hemos declarado dos variables las cuales tienen un scope(ambito o alcance) distinto, una existe de forma global, y otro existe dentro de las llaves.
@@ -455,7 +455,7 @@
       let y = 3;
       x += y;
       console.log(x)
-      <!-- mostrará 5, pues la variable x tiene scope externo -->
+      // mostrará 5, pues la variable x tiene scope externo
     }
    ```
 
@@ -471,21 +471,21 @@
    - **date** para el manejo de fechas.
 
    ```JS
-   <!-- Booleanos -->
+    //Booleanos
     let de = true;
     let b = false;
-    <!-- Indefinidos -->
+    //Indefinidos
     let variable;
-    <!-- Nulos -->
+    //Nulos
     let variable = null;
-    <!-- Objeto -->
+    // Objeto
     let objeto {
       clave: valor
     }
-    <!-- Arrays -->
+    // Arrays
     lst frutas = ["manzana", "pera", "fresa"];
     console.log(frutas);
-    <!-- Fechas -->
+    // Fechas
     let fecha = new Date("01-31-2024");
     console.log(fecha);
    ```
@@ -501,32 +501,32 @@
    - **Ejemplos**...👇👇👇
 
    ```JS
-    <!-- Doble y triple igual -->
+    // Doble y triple igual
     let x = 2;
     let y = 4;
-    <!-- doble igual compara si el valor absoluto es igual -->
+    // doble igual compara si el valor absoluto es igual
     let z = x == y;
-    <!-- triple igual compara si el valor y tipo de dato son iguales -->
+    // triple igual compara si el valor y tipo de dato son iguales
     let z = x === y;
 
-    <!--Negación-->
+    // Negación
     let num1 = 2;
     let num2 = 2;
     let result = num1 != num2;
     console.log(result);
 
-    <!-- Mayor o Menor -->
+    // Mayor o Menor
     let a = 2;
     let b = 2;
     let resul = a > b;
     console.log(resul);
-    <!-- operador && -->
+    // operador &&
     let a = 2;
     let b = 1;
     let c = 3
     let resul = a > b && c < a;
     console.log(resul);
-    <!-- operador || -->
+   // operador ||
     let a = 2;
     let b = 2;
     let resul = a > b || a > c;
@@ -544,27 +544,35 @@
 
    ```JS
     function nombreFuncion(parametro1, parametro2, ...){
-      <!-- instrucciones -->
+      //instrucciones
     }
-    <!-- ejemplo práctico con función clásica-->
+    //ejemplo práctico con función clásica o declarada
     function suma(a,b){
       return a + b;
     }
     suma(2,4);
     let respuesta = suma(2,4);
     console.log(respuesta);
-    <!-- con lo anterior devolvemos mediante una función la suma de dos números. -->
+    //con lo anterior devolvemos mediante una función la suma de dos números.
    ```
 
    - Existen otras formas de declarar una función.
 
    ```JS
-    <!-- Funciones tipo flecha -->
+      //Funciones tipo flecha
       let sumaDos = numero => numero + 1;
       console.log(sumaDos(3));
-      <!-- esto nos devolvería 4 -->
+     // esto nos devolvería 4
+
+      //Funciones por expresión
+      const square = function (number) {
+       return number * number;
+      };
+      let x = square(4); // x obtiene el valor 16
+      console.log(x);
    ```
 
 ### Objetos
 
--
+- Son estructuras de datos, formados por pares de clave valor, que pueden tener propiedades y métodos.
+- son representaciones de algo real en código.
