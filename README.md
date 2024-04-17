@@ -345,19 +345,19 @@
 
        - **var**: nombreDeLaVariable = valor
        - En JS existe algo que se conoce como camel case, es decir, el uso de minúsculas y mayúsculas con en nombreDeVariable.
-       - No se recomienda el usp de var debido al scope.
+       - No se recomienda el uso de var debido al scope.
        - **let** nombreVariable = valor
        - let es la forma recomendada de declarar variables.
        - **const** nombreVariable = "valor"
-       - En el caso de const, es obligatorio declarar un valor a nuestra varaibles.
-       - cons no permite reasignar la declaración de una variebla a diferencia de var y let que si lo hacen.
+       - En el caso de const, es obligatorio declarar un valor a nuestras variables.
+       - const no permite reasignar la declaración de una variebla a diferencia de var y let que si lo hacen, const es un valor constante.
 
        ```JS
           var = "miVariable1";
           let = "miVariable2";
           const = "miVariable3";
 
-          // Declaración de varias varaibles a la vez
+          // Declaración de varias variables a la vez
           let x,y,z;
           // Luego le asignamos los valores
           x = 1;
@@ -365,9 +365,9 @@
           z = x + y;
        ```
 
-       - EL punto y coma permite separar ejecuciones de líneas de cógigo.
+       - EL punto y coma permite separar ejecuciones de líneas de cógigo, no es obligatorio pero es recomendable.
 
-   - Datos number y string:
+   - Tipos de Datos number y string:
 
      - Números:
 
@@ -385,10 +385,10 @@
 
    ### Operadores
 
-   - Tenemos el opreador de aisgnación que es el signo igual **=**.
+   - Tenemos el operador de aisgnación que es el signo igual **=**.
    - También tenemos los operadores aritméticos representados por los símbolos de las cuatro operacioens básicas **(+, -, \*, /)**
-   - Tenemos el símbolo de **%** que nos dá el resto de uan diisión.
-   - Si queremos colocar un exponente, podemos hacerlo con el opereador **\*\***.
+   - Tenemos el símbolo de **%** que nos dá el resto de una división.
+   - Si queremos colocar un exponente, podemos hacerlo con el operador **\*\***.
 
    ```JS
     const suma = 1 + 3; // suma o concatenación
